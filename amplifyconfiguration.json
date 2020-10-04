@@ -1,0 +1,28 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "Auth": {
+                    "Default": {
+                        "OAuth": {
+                            "WebDomain": "muhmobi.auth.ca-central-1.amazoncognito.com",
+                            "AppClientId": "6auomma9jjtj7gif77q5mj5hlm",
+                            "SignInRedirectURI": "myapp://callback",
+                            "SignOutRedirectURI": "myapp://signout",
+                            "Scopes": ["openid", "profile"]
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "ca-central-1_8P4fW5OXZ",
+                        "AppClientId": "6auomma9jjtj7gif77q5mj5hlm",
+                        "Region": "ca-central-1"
+                    }
+                }
+            }
+        }
+    }
+}
